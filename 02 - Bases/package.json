@@ -1,0 +1,23 @@
+{
+  "name": "02---bases",
+  "version": "0.0.1",
+  "description": "Esta es mi primera aplicacion de Node",
+  "license": "ISC",
+  "author": "Matias",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "start:dev": "echo 'Hello World!!! from dev script'",
+    "dev": "nodemon src/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "get-age": "^1.0.1",
+    "uuid": "^14.0.2"
+  }
+}
