@@ -1,0 +1,24 @@
+FAIL test/plugins/logger.plugin.test.ts
+  ● Test suite failed to run
+
+    [96mtest/plugins/logger.plugin.test.ts[0m:[93m38[0m:[93m7[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 2.
+
+    [7m38[0m       expect.objectContaining({
+    [7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [7m39[0m         message,
+    [7m  [0m [91m~~~~~~~~~~~~~~~~[0m
+    [7m40[0m         service,
+    [7m  [0m [91m~~~~~~~~~~~~~~~~[0m
+    [7m41[0m       }),
+    [7m  [0m [91m~~~~~~~~[0m
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |                   
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        11.749 s
+Ran all test suites matching test/plugins/logger.plugin.test.ts.

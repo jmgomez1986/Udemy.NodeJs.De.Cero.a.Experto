@@ -4,7 +4,8 @@
 // const { getUserById } = require("./js-fundation/04-arrow");
 // const { buildMakePerson } = require("./js-fundation/05-factory");
 // const { getUUID, getAge } = require("./plugins");
-const getPokemonById = require("./js-fundation/06-promises");
+// const getPokemonById = require("./js-fundation/06-promises");
+const { buildLogger } = require("./plugins");
 
 // console.log(emailTemplate);
 
@@ -44,10 +45,19 @@ const getPokemonById = require("./js-fundation/06-promises");
 //   console.log(pokemonName);
 // });
 
-getPokemonById(1)
-  .then((pokemon) => console.log({ name: pokemon.name }))
-  .catch((error) => console.log("Por favor intente de nuevo", error))
-  .finally(() => console.log("Finalizado"));
+// getPokemonById(1)
+//   .then((pokemon) => console.log({ name: pokemon.name }))
+//   .catch((error) => console.log("Por favor intente de nuevo", error))
+//   .finally(() => console.log("Finalizado"));
 
 // const pokemonName = getPokemonById(1);
 // console.log(pokemonName);
+
+/**
+ * Usango Logger (Winston)
+ */
+
+const logger = buildLogger("app.js");
+
+logger.log("Hello World!!!");
+logger.error("Hubo un ERROR!!!");
